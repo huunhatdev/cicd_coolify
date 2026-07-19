@@ -1,0 +1,2 @@
+# Chạy mỗi ngày lúc 03:00.
+0 3 * * * /opt/registry-cleanup/cleanup.sh >> /var/log/registry-cleanup.log 2>&1

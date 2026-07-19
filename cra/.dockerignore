@@ -1,0 +1,12 @@
+node_modules
+.git
+.github
+.vscode
+.idea
+.env
+.env.*
+npm-debug.log
+yarn-error.log
+Dockerfile*
+docker-compose*.yml
+README.md

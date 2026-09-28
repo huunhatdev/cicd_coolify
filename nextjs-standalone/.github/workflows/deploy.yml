@@ -62,7 +62,7 @@ jobs:
       - name: Create environment file
         shell: bash
         env:
-          ENV_FILE: ${{ secrets.ENV_FILE }}
+          ENV_FILE: ${{ vars.ENV_FILE }}
         run: |
           set -euo pipefail
 
@@ -133,6 +133,6 @@ jobs:
             --retry-all-errors \
             --connect-timeout 10 \
             --max-time 60 \
-            --request GET \
+            --request POST \
             "$COOLIFY_WEBHOOK" \
             --header "Authorization: Bearer $COOLIFY_TOKEN"

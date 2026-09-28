@@ -49,6 +49,7 @@ Sau đó restart hoặc redeploy Registry.
 ```bash
 sudo mkdir -p /opt/registry-cleanup
 sudo cp cleanup.sh /opt/registry-cleanup/cleanup.sh
+sudo touch /opt/registry-cleanup/cleanup.sh
 sudo chmod +x /opt/registry-cleanup/cleanup.sh
 ```
 
@@ -56,6 +57,7 @@ sudo chmod +x /opt/registry-cleanup/cleanup.sh
 
 ```bash
 sudo cp registry-cleanup.env.example /etc/registry-cleanup.env
+sudo touch /etc/registry-cleanup.env
 sudo nano /etc/registry-cleanup.env
 sudo chmod 600 /etc/registry-cleanup.env
 ```
@@ -63,11 +65,11 @@ sudo chmod 600 /etc/registry-cleanup.env
 Ví dụ Coolify:
 
 ```bash
-REGISTRY_URL='http://10.0.6.2:5000'
+# REGISTRY_URL='http://10.0.6.2:5000'
 REGISTRY_CONTAINER='registry-skao425ijnocslq45npzhuhw'
 REGISTRY_CONFIG='/etc/docker/registry/config.yml'
 KEEP_PRODUCTION=3
-REGISTRY_USERNAME='username'
+REGISTRY_USERNAME='registry'
 REGISTRY_PASSWORD='password'
 ```
 

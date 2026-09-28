@@ -133,6 +133,6 @@ jobs:
             --retry-all-errors \
             --connect-timeout 10 \
             --max-time 60 \
-            --request GET \
+            --request POST \
             "$COOLIFY_WEBHOOK" \
             --header "Authorization: Bearer $COOLIFY_TOKEN"

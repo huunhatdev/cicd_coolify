@@ -62,7 +62,7 @@ jobs:
       - name: Create environment file
         shell: bash
         env:
-          ENV_FILE: ${{ secrets.ENV_FILE }}
+          ENV_FILE: ${{ vars.ENV_FILE }}
         run: |
           set -euo pipefail
 

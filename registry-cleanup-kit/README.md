@@ -58,7 +58,7 @@ sudo chmod +x /opt/registry-cleanup/cleanup.sh
 ```bash
 sudo cp registry-cleanup.env.example /etc/registry-cleanup.env
 sudo touch /etc/registry-cleanup.env
-sudo nano /etc/registry-cleanup.env
+sudo vi /etc/registry-cleanup.env
 sudo chmod 600 /etc/registry-cleanup.env
 ```
 

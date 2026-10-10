@@ -1,0 +1,26 @@
+{
+  "org": "AI-PM-AGENT",
+  "repositories": [
+    {
+      "repo": "Frontend",
+      "variables": {},
+      "secrets": {},
+      "environments": {
+        "develop": {
+          "variables": {
+            "REGISTRY": "registry.pmconsulting.vn",
+            "ENV_FILE": {
+              "file":"./.env.develop"
+            }
+          },
+          "secrets": {
+            "COOLIFY_WEBHOOK": "",
+            "COOLIFY_TOKEN": "1|0wgYw9nqohEYlSgZvlWoUJXKfMuPfbluc0cqFzk331fc0701",
+            "REGISTRY_PASSWORD": "tLgNHNbDhCGoTJhkc8i8G8vOCo1gaVnF",
+            "REGISTRY_USERNAME": "registry"
+          }
+        }
+      }
+    }
+  ]
+}

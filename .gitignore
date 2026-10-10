@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+
+# Build and coverage outputs
+dist/
+build/
+out/
+coverage/
+.next/
+.nuxt/
+.vite/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime and temporary files
+.tmp/
+tmp/
+*.tmp
+*.temp
+*.swp
+
+# Docker local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# IDE and editor files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.user
+*.userossc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test artifacts
+.nyc_output/
+playwright-report/
+test-results/
+
+# Local tooling caches
+.cache/
+.eslintcache
+.prettier-cache
